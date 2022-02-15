@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.mamede</groupId>
+  <artifactId>javaeebook</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>javaeebook Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <jakartaee>8.0</jakartaee>
+    </properties>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/javax.faces/javax.faces-api -->
+	<dependency>
+	    <groupId>javax.faces</groupId>
+	    <artifactId>javax.faces-api</artifactId>
+	    <version>2.3</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>${jakartaee}</version>
+        <scope>provided</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+	<dependency>
+	    <groupId>commons-validator</groupId>
+	    <artifactId>commons-validator</artifactId>
+	    <version>1.7</version>
+	</dependency>
+    
+  	
+  </dependencies>
+  <build>
+    <finalName>javaeebook</finalName>
+  </build>
+</project>
