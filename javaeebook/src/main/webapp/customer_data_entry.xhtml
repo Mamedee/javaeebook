@@ -14,12 +14,18 @@
 			<h:messages></h:messages>
 			<h:panelGrid columns="2" columnClasses="rightAlign,leftAlign">
 				<h:outputLabel for="firstName" value="First Name"></h:outputLabel>
-				<h:inputText id="firstName" label="First Name" value="#{customer.firstName}" required="true">
+				<h:inputText 
+					id="firstName" label="First Name" 
+					value="#{customer.firstName}" required="true"
+					validator="#{alphaValidator.validateAlpha}">
 					<f:validateLength minimum="2" maximum="30"></f:validateLength>
 				</h:inputText>
 				
 				<h:outputLabel for="lastName" value="Last Name"></h:outputLabel>
-				<h:inputText id="lastName" label="Last Name" value="#{customer.lastName}" required="true">
+				<h:inputText 
+					id="lastName" label="Last Name" 
+					value="#{customer.lastName}" required="true"
+					validator="#{alphaValidator.validateAlpha}">
 					<f:validateLength minimum="2" maximum="30"></f:validateLength>
 				</h:inputText>
 				
