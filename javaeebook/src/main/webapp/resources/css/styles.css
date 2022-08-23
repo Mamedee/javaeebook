@@ -9,3 +9,7 @@ root {
 .rightAlign {
   text-align: right;
 }
+
+.errorMessage {
+	color: red;
+}
